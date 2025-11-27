@@ -131,21 +131,6 @@ Handles sending email with:
 
 ---
 
-## Example Project Structure
-
-```
-simple-mail-server/
-├─ .env
-├─ package.json
-├─ index.js
-├─ transporter.js
-├─ sendMail.js
-├─ templates/
-│  └─ welcome.js
-```
-
----
-
 ## Dependencies
 
 * [nodemailer](https://www.npmjs.com/package/nodemailer)

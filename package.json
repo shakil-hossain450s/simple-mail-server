@@ -1,5 +1,5 @@
 {
-  "name": "@shakilhossain450s/simple-mail-server",
+  "name": "simple-mail-server-node",
   "version": "1.0.0",
   "description": "Tiny helper around nodemailer for simple template based sending with minimal email",
   "keywords": [
@@ -21,6 +21,6 @@
     "nodemailer": "^7.0.11"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }

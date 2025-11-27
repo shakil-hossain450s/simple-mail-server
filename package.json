@@ -1,7 +1,7 @@
 {
   "name": "simple-mail-server-node",
-  "version": "1.0.0",
-  "description": "Tiny helper around nodemailer for simple template based sending with minimal email",
+  "version": "1.0.1",
+  "description": "Tiny helper around nodemailer for simple template-based sending with minimal setup",
   "keywords": [
     "nodemailer",
     "email",
@@ -20,6 +20,14 @@
     "dotenv": "^17.2.3",
     "nodemailer": "^7.0.11"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakil-hossain450s/simple-mail-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shakil-hossain450s/simple-mail-server/issues"
+  },
+  "homepage": "https://github.com/shakil-hossain450s/simple-mail-server#readme",
   "publishConfig": {
     "access": "public"
   }

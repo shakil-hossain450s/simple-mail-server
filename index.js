@@ -1,4 +1,5 @@
-const { sendMail } = require("./src/sendMail");
+const sendMail = require('./sendMail');
 
-module.exports = { sendMail };
-
+module.exports = {
+  sendMail
+};

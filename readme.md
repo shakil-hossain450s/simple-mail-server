@@ -110,27 +110,6 @@ Currently includes:
 
 ---
 
-## transporter.js
-
-Handles creating the Nodemailer transporter based on environment variables and optionally verifies the connection at startup.
-
-```javascript
-const transporter = require("./transporter");
-```
-
----
-
-## sendMail.js
-
-Handles sending email with:
-
-* Template rendering
-* Custom HTML
-* Debug logging
-* Error handling
-
----
-
 ## Dependencies
 
 * [nodemailer](https://www.npmjs.com/package/nodemailer)

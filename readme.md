@@ -18,7 +18,7 @@ A tiny helper around [Nodemailer](https://nodemailer.com/) for sending template-
 ## Installation
 
 ```bash
-npm install simple-mail-server
+npm install simple-mail-server-node
 ```
 
 ---
@@ -53,7 +53,7 @@ MAIL_FROM="My App <no-reply@myapp.com>"
 ### 1. Sending an email with a template
 
 ```javascript
-const sendMail = require('simple-mail-server/sendMail');
+const sendMail = require('simple-mail-server-node/sendMail');
 
 (async () => {
   const result = await sendMail({
@@ -70,7 +70,7 @@ const sendMail = require('simple-mail-server/sendMail');
 ### 2. Sending an email with custom HTML
 
 ```javascript
-const sendMail = require('simple-mail-server/sendMail');
+const sendMail = require('simple-mail-server-node/sendMail');
 
 (async () => {
   const result = await sendMail({
@@ -86,7 +86,7 @@ const sendMail = require('simple-mail-server/sendMail');
 ### 3. Overriding the sender email
 
 ```javascript
-const sendMail = require('simple-mail-server/sendMail');
+const sendMail = require('simple-mail-server-node/sendMail');
 
 (async () => {
   const result = await sendMail({
@@ -107,27 +107,6 @@ const sendMail = require('simple-mail-server/sendMail');
 Currently includes:
 
 * `welcome`: a simple welcome email template
-
----
-
-## transporter.js
-
-Handles creating the Nodemailer transporter based on environment variables and optionally verifies the connection at startup.
-
-```javascript
-const transporter = require("./transporter");
-```
-
----
-
-## sendMail.js
-
-Handles sending email with:
-
-* Template rendering
-* Custom HTML
-* Debug logging
-* Error handling
 
 ---
 

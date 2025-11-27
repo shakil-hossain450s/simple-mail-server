@@ -1,0 +1,23 @@
+{
+  "name": "simple-mail-server",
+  "version": "1.0.0",
+  "description": "Tiny helper around nodemailer for simple template based sending with minimal email",
+  "keywords": [
+    "nodemailer",
+    "email",
+    "smtp",
+    "templates",
+    "simple"
+  ],
+  "license": "MIT",
+  "author": "Md Shakil Hossain",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --eval \"console.log('no tests defined')\""
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "nodemailer": "^7.0.11"
+  }
+}

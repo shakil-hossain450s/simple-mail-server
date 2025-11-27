@@ -1,4 +1,5 @@
-module.exports = ({ username }) => `
-  <h2>Welcome ${username}</h2>
-  <p>Thanks for joining our community.</p>
-`;
+module.exports = (variables = {}) => {
+  const name = variables.username || 'User';
+  return `<h2>Welcome, ${name}!</h2>
+          <p>Thanks for joining us.</p>`;
+};

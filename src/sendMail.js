@@ -1,4 +1,6 @@
 const transporter = require("./transporter");
+
+// Built-in templates
 const templates = {
   welcome: require("./templates/welcome"),
 };
@@ -20,7 +22,7 @@ const templates = {
  */
 
 async function sendMail(options = {}) {
-  const { to, subject, templateName, variables, customHtml, from } = options;
+  const { to, subject, templateName, variables = {}, customHtml, from, debug = false } = options;
 
   // simple validation
   if (!to) {
@@ -36,25 +38,30 @@ async function sendMail(options = {}) {
     html = customHtml;
   } else if (templateName && templates[templateName]) {
     try {
-      html = templates[templateName](variables = {});
+      html = templates[templateName](variables || {});
     } catch (err) {
-      return { success: false, message: "Template error renderring: " + err.message }
+      return { success: false, message: "Template renderring error: " + err.message }
     }
   } else {
     // fallback plain text if neither provided
-    html = `<p>No template selected and no customHtml provided.</p>`
+    html = `<p>Email to ${to} has no content: no template or customHtml provided.</p>`
   }
 
   // Mail options:
   const mailOptions = {
-    from: from || process.env.MAIL_FROM || process.env.MAIL_USER || "no-replay@example.com",
+    from: from || process.env.MAIL_FROM || process.env.MAIL_USER || "no-reply@example.com",
     to,
     subject,
     html
   }
 
+  if (debug) {
+    console.log("sendMail options:", mailOptions);
+  }
+
   try {
     const info = await transporter.sendMail(mailOptions);
+    if (debug) console.log("Email sent:", info.response);
     return { success: true, info };
   } catch (err) {
     return { success: false, error: err.message || String(err) }

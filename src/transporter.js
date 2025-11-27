@@ -25,7 +25,7 @@ const transporter = nodemailer.createTransport(transporterOptions);
 
 // verify the connections
 if (process.env.MAIL_VERIFY === "true") {
-  transport.verify((error, success) => {
+  transporter.verify((error, success) => {
     if (error) {
       console.error("simple-mail-sevrer: transport verify failed:", error.message);
     } else {

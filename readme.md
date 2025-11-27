@@ -29,7 +29,7 @@ Create a `.env` file in the root of your project:
 
 ```ini
 MAIL_USER=your_email@example.com
-MAIL_PASS=your_email_password_or_app_password
+MAIL_PASS=your_app_password
 # Optional settings:
 MAIL_SERVICE=gmail
 MAIL_HOST=smtp.example.com

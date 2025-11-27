@@ -18,7 +18,7 @@ A tiny helper around [Nodemailer](https://nodemailer.com/) for sending template-
 ## Installation
 
 ```bash
-npm install simple-mail-server
+npm install simple-mail-server-node
 ```
 
 ---

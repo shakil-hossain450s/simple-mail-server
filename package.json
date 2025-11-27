@@ -1,6 +1,6 @@
 {
   "name": "simple-mail-server-node",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Tiny helper around Nodemailer for simple template-based sending with minimal setup",
   "keywords": [
     "nodemailer",

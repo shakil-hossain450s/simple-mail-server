@@ -1,3 +1,5 @@
 const sendMail = require("./src/sendMail");
 
-module.exports = sendMail;
+module.exports = {
+  sendMail
+};

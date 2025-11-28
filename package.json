@@ -7,7 +7,9 @@
     "email",
     "smtp",
     "templates",
-    "simple"
+    "simple",
+    "node-mail",
+    "mail-server"
   ],
   "license": "MIT",
   "author": "Md Shakil Hossain",
@@ -22,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shakil-hossain450s/simple-mail-server.git"
+    "url": "git+https://github.com/shakil-hossain450s/simple-mail-server-node.git"
   },
   "bugs": {
-    "url": "https://github.com/shakil-hossain450s/simple-mail-server/issues"
+    "url": "https://github.com/shakil-hossain450s/simple-mail-server-node/issues"
   },
-  "homepage": "https://github.com/shakil-hossain450s/simple-mail-server#readme",
+  "homepage": "https://github.com/shakil-hossain450s/simple-mail-server-node#readme",
   "files": [
     "index.js",
     "src/"
